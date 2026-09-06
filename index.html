@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Асет 50 жас және Раяна Тілашар — тойға шақыру">
+<title>Асет 50 жас • Раяна Тілашар</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap');
+
+:root{
+  --ink:#302a25; --muted:#756b62; --paper:#f7f1e8; --paper2:#eee3d4;
+  --accent:#9b7452; --line:rgba(48,42,37,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,sans-serif}
+.page{overflow:hidden}
+.hero{
+  min-height:100svh; display:flex; align-items:center; justify-content:center;
+  text-align:center; position:relative; padding:50px 20px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(155,116,82,.12), transparent 28%),
+    radial-gradient(circle at 80% 70%, rgba(155,116,82,.10), transparent 30%),
+    linear-gradient(135deg,#f9f5ee,#eee4d7);
+}
+.hero:before,.hero:after{
+  content:"";position:absolute;width:180px;height:180px;border:1px solid var(--line);
+  border-radius:50%;opacity:.6
+}
+.hero:before{top:-80px;left:-80px}.hero:after{bottom:-80px;right:-80px}
+.ornament{font-family:"Cormorant Garamond";font-size:42px;color:var(--accent);letter-spacing:8px}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500}
+h1{font-size:clamp(58px,10vw,130px);line-height:.8;margin:22px 0 30px}
+.hero p{font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--muted)}
+.date{font-family:"Cormorant Garamond";font-size:27px;margin-top:28px}
+.scroll{position:absolute;bottom:25px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+.section{max-width:1100px;margin:auto;padding:100px 24px}
+.center{text-align:center}
+.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent)}
+h2{font-size:clamp(42px,6vw,72px);margin:12px 0 25px}
+.lead{max-width:650px;margin:0 auto;color:var(--muted);line-height:1.9;font-size:16px}
+.names{font-family:"Cormorant Garamond";font-size:clamp(34px,5vw,58px);margin:28px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+.card{padding:42px 30px;border:1px solid var(--line);background:rgba(255,255,255,.2);text-align:center}
+.card h3{font-size:36px;margin:8px 0 15px}
+.card p{margin:7px 0;color:var(--muted);line-height:1.7}
+.location{background:var(--paper2)}
+.address{font-size:18px;line-height:1.8;margin:20px auto;max-width:600px}
+.map{
+  display:block;width:100%;height:430px;border:0;margin-top:35px;
+  filter:grayscale(.2) sepia(.12);
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-top:20px;padding:14px 27px;border:1px solid var(--ink);
+  color:var(--ink);text-decoration:none;font-size:12px;letter-spacing:2px;
+  text-transform:uppercase;transition:.25s;background:transparent;
+}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);max-width:720px;margin:45px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.time{padding:25px 10px}.num{font-family:"Cormorant Garamond";font-size:48px}.label{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.footer{padding:90px 24px 55px;text-align:center;background:#e8dccd}
+.footer .names{font-size:44px}.small{font-size:11px;letter-spacing:2px;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:700px){
+  .section{padding:75px 20px}.grid{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(2,1fr)}
+  .map{height:330px}.hero p{letter-spacing:2px}.date{font-size:24px}
+}
+@media(min-width:1200px){
+  .hero{min-height:760px}.section{padding-top:120px;padding-bottom:120px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<section class="hero">
+  <div>
+    <div class="ornament">✦</div>
+    <p>Тойға шақыру</p>
+    <h1>Асет<br>50 жас</h1>
+    <div class="ornament">❧</div>
+    <div class="date">03 қазан 2026 • 18:00</div>
+  </div>
+  <div class="scroll">төмен жылжытыңыз ↓</div>
+</section>
+
+<section class="section center reveal">
+  <div class="kicker">Құрметті қонақтар!</div>
+  <h2>Сіздерді қуана күтеміз</h2>
+  <p class="lead">
+    Сіздерді Асеттің 50 жас мерейтойы мен Раянаның Тілашар тойына
+    арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз.
+    Кешіміздің сәні де, мәні де — сіздердің ақ ниеттеріңіз бен ақ тілектеріңіз.
+  </p>
+  <div class="names">Асет &amp; Динара</div>
+</section>
+
+<section class="section center" style="padding-top:20px">
+  <div class="grid reveal">
+    <div class="card">
+      <div class="kicker">Мерейтой</div>
+      <h3>Асет</h3>
+      <p>50 жас</p>
+      <p>Өмірдің жаңа белесін бірге атап өтейік!</p>
+    </div>
+    <div class="card">
+      <div class="kicker">Ақ бата</div>
+      <h3>Раяна</h3>
+      <p>Тілашар</p>
+      <p>Кішкентай қуанышымыздың үлкен тойына қош келдіңіз!</p>
+    </div>
+  </div>
+</section>
+
+<section class="location">
+  <div class="section center reveal">
+    <div class="kicker">Той өтетін орын</div>
+    <h2>Дәулет Палас</h2>
+    <div class="address">
+      <strong>Дәулет Палас мейрамханасы</strong><br>
+      Талғар қаласы<br>
+      Наурызбай батыр көшесі, 15
+    </div>
+    <a class="btn" target="_blank" rel="noopener" href="https://2gis.kz/almaty/geo/70000001043745689/77.231122,43.313365">
+      Мекенжайын ашу
+    </a>
+    <iframe class="map" title="Дәулет Палас картасы"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=77.221122%2C43.303365%2C77.241122%2C43.323365&amp;layer=mapnik&amp;marker=43.313365%2C77.231122">
+    </iframe>
+  </div>
+</section>
+
+<section class="section center reveal">
+  <div class="kicker">Кешке дейін</div>
+  <h2>Қуанышты күнге санаулы сәттер</h2>
+  <p class="lead">03 қазан 2026 жыл, сағат 18:00</p>
+  <div class="countdown">
+    <div class="time"><div class="num" id="days">00</div><div class="label">күн</div></div>
+    <div class="time"><div class="num" id="hours">00</div><div class="label">сағат</div></div>
+    <div class="time"><div class="num" id="minutes">00</div><div class="label">минут</div></div>
+    <div class="time"><div class="num" id="seconds">00</div><div class="label">секунд</div></div>
+  </div>
+</section>
+
+<section class="section center reveal">
+  <div class="kicker">Ақ тілекпен</div>
+  <h2>Келіңіздер,<br>бірге қуаныш бөлісейік!</h2>
+  <p class="lead">Сіздердің келулеріңіз — біз үшін ең үлкен сый.</p>
+  <div class="names">Асет &amp; Динара</div>
+</section>
+
+<footer class="footer">
+  <div class="ornament">✦</div>
+  <div class="names">Асет • Раяна</div>
+  <div class="small">03.10.2026 • 18:00 • Талғар</div>
+</footer>
+</div>
+
+<script>
+const target = new Date("2026-10-03T18:00:00+05:00").getTime();
+function tick(){
+  const d = target - Date.now();
+  if(d <= 0){
+    ["days","hours","minutes","seconds"].forEach(id=>document.getElementById(id).textContent="00");
+    return;
+  }
+  const days=Math.floor(d/86400000), hours=Math.floor(d/3600000)%24,
+        minutes=Math.floor(d/60000)%60, seconds=Math.floor(d/1000)%60;
+  document.getElementById("days").textContent=String(days).padStart(2,"0");
+  document.getElementById("hours").textContent=String(hours).padStart(2,"0");
+  document.getElementById("minutes").textContent=String(minutes).padStart(2,"0");
+  document.getElementById("seconds").textContent=String(seconds).padStart(2,"0");
+}
+tick(); setInterval(tick,1000);
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")});
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
